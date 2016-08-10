@@ -34,8 +34,9 @@ export default Ember.Component.extend({
 
   nextUrl: computed('urlTemplate', 'current', 'count', function () {
     var urlTemplate = this.get('urlTemplate');
-    var current = this.get('current');
-    var count = this.get('count');
+    var current = Number(this.get('current'));
+    var count = Number(this.get('count'));
+
 
     urlTemplate = urlTemplate.replace('{current}', current < count ? current + 1 : current);
 
@@ -83,6 +84,8 @@ export default Ember.Component.extend({
   isLast: computed('lastPage', 'current', function () {
     var currentPage = parseInt(this.get('currentPage'));
     var lastPage = parseInt(this.get('lastPage'));
+
+
     
     return currentPage === lastPage;
   }),
@@ -99,10 +102,10 @@ export default Ember.Component.extend({
 
   pages: computed('count', 'current', 'countOut', 'countIn', function () {
     var seperator = this.get('seperator');
-    var current = this.get('current');
-    var count = this.get('count');
-    var countOut = this.get('countOut');
-    var countIn = this.get('countIn');
+    var current = Number(this.get('current'));
+    var count = Number(this.get('count'));
+    var countOut = Number(this.get('countOut'));
+    var countIn = Number(this.get('countIn'));
     var result = [];
     var i;
 
@@ -153,6 +156,7 @@ export default Ember.Component.extend({
     links.forEach(function (content) {
       result.push(content);
     });
+
 
     return result;
   }),
