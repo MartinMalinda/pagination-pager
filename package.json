@@ -39,7 +39,8 @@
     "ember-cli-uglify": "^1.0.1",
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.0",
-    "ember-export-application-global": "^1.0.2"
+    "ember-export-application-global": "^1.0.2",
+    "semantic-ui-ember": "1.0.0"
   },
   "description": "{{pagination-pager}} - Ember.js Component for Bootstrap 3 pagination & pager components",
   "keywords": [

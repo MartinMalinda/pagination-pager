@@ -1,5 +1,5 @@
 {{#if isDots}}
-  <a>{{page}}</a>
+  <a class="disabled item">{{page}}</a>
 {{else}}
-  <a href="{{url}}" {{action 'select'}}>{{page}}</a>
+  <a class="item" href="{{url}}" {{action 'select'}}>{{page}}</a>
 {{/if}}

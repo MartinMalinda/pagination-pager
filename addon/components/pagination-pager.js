@@ -4,7 +4,8 @@ var computed = Ember.computed;
 var alias = computed.alias;
 
 export default Ember.Component.extend({
-  tagName: 'ul',
+  tagName: 'div',
+  classNames: ['ui', 'pagination', 'menu'],
   classNameBindings: ['pager:pager:pagination', 'isHidden:hidden', 'paginationSizeClass'],
   pager: false,
   hide: false,

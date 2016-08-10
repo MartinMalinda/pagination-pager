@@ -3,8 +3,8 @@ import Ember from 'ember';
 var computed = Ember.computed;
 
 export default Ember.Component.extend({
-  tagName: 'li',
-  classNameBindings: ['isActive:active', 'disabled'],
+  tagName: '',
+  // classNameBindings: ['isActive:active', 'disabled'],
   seperator: '…',
   selected: null,
 
