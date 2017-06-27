@@ -1,5 +1,5 @@
 {{#if isDots}}
   <a class="disabled item">{{page}}</a>
 {{else}}
-  <a class="item {{if disabled "disabled"}} {{if isActive "active"}}" {{action "select"}} href="{{url}}">{{page}}</a>
+  <a class="item {{if disabled "disabled"}} {{if isActive "active"}}" href={{url}}>{{page}}</a>
 {{/if}}
