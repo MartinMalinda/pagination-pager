@@ -25,6 +25,8 @@ export default Ember.Component.extend({
     }
   }),
 
+  pageNumber: computed.alias('page'),
+
   isDots: computed('page', function () {
     var seperator = this.get('seperator');
     var page = this.get('page');
